@@ -229,3 +229,65 @@ html {
     }
    
 }
+
+
+
+.C_form{
+    margin-top: 5%;
+    display: flex;
+    width: 50%;
+    background: #FDFDFF;
+    padding: 4%;
+    box-shadow: 4px 6px 46px -1px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+.C_contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.C_contact .C_contact_header h2{
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.C_form input{
+    width: 100%;
+    margin: 3%;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 11px rgba(233, 156, 46, 0.2);
+    border: none;
+    height: 60px;
+}
+.C_contact .C_contact_header{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+.C_contact .C_contact_header p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 25px;
+/* identical to box height, or 133% */
+
+text-align: center;
+text-transform: capitalize;
+color: #A09E9C;
+margin-top:20%;
+margin-bottom:20%;
+}
+.btne{
+    padding: 6px 26px;
+    background-color: #E99C2E;
+    width: max-content;
+    margin-left: 40%;
+    margin-top: 3%;
+}
+.btne a{
+    color: white;
+}
