@@ -13,8 +13,8 @@ html {
 }
 
 .title {
-    margin-top: 20px;
-    margin-bottom: -90px;
+    margin-top: 60px;
+    margin-bottom: 0px;
     height: 100px;
     text-align: center;
     align-items: center;
@@ -24,7 +24,6 @@ html {
     font-size: 50px;
     line-height: 24px;
     color: #151D53;
-
 }
 
 /* 
@@ -39,10 +38,11 @@ html {
 
 
 .slide {
-    margin-top: 5%;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 30px; */
     width: 100%;
-    height: 542px;
+    height: 100%;
     background: rgba(251, 188, 62, 0.5);
 }
 
@@ -50,7 +50,7 @@ html {
     margin-top: -8%;
     padding-left: 1, 57893573%;
     width: 100%;
-    height: 17.3682%;
+    height: 14%;
     opacity: 0.1;
 }
 
@@ -62,19 +62,30 @@ html {
 .slide img {
     width: 350PX;
     height: 350px;
-    margin: 8% 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     /* margin-left: 50%; */
     /* background: url(pexels-rfstudio-3819712.jpg); */
     opacity: 0.8;
 }
 
+
+.carousel-item active{
+    display:flex;
+}
+.carousel-item img{
+    width: 27.70%;
+    /* height: 82.20%; */
+}
+
 .titleprod {
-    position: absolute;
+    /* position: absolute;
     left: 41.57%;
     right: 37.08%;
     top: 26.94%;
-    bottom: 66.42%;
-
+    bottom: 66.42%; */
+    
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -86,6 +97,74 @@ html {
 
     color: #0C0C0C;
 }
+.titledesc {
+    /* position: absolute;
+    left: 42.92%;
+    right: 22.57%;
+    top: 37.82%;
+    bottom: 48.89%; */
+    margin:2% 0%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    color: #0C0C0C;
+}
+
+.titleprice {
+    /* position: absolute;
+    left: 41.82%;
+    right: 50%;
+    top: 55.9%;
+    bottom: 39.11%; */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height, or 120% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FBB534;
+
+}
+.titlebtn {
+    /* box-sizing: border-box;
+    position: absolute;
+    left: 41.82%;
+    right: 50%;
+    top: 55.9%;
+    bottom: 39.11%;
+    
+    position: relative;
+    left: -5%;
+    right: 50%;
+    top: 100px;
+    bottom: 39.11%; */
+
+    margin: 5%  44%;
+    /* align-items: center; */
+    
+    /* text-align: center; */
+    width: 140px;
+    height: 50;
+    background-color: #0C0C0C;
+    border: 1px solid #0D0806;
+    border-radius: 0px;
+    margin-top: 20px;
+
+}
+
+/* .carousel-item a{
+    margin: 20px;
+    color: #151D53;
+    opacity: 0.8;
+} */
 
 .doubl {
     background: transparent;
@@ -115,66 +194,6 @@ html {
     font-size: 30px;
     line-height: 24px;
     color: #000000;
-}
-
-
-.titledesc {
-    position: absolute;
-    left: 42.92%;
-    right: 22.57%;
-    top: 37.82%;
-    bottom: 48.89%;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-    color: #0C0C0C;
-}
-
-.titleprice {
-    position: absolute;
-    left: 41.82%;
-    right: 50%;
-    top: 55.9%;
-    bottom: 39.11%;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    /* identical to box height, or 120% */
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: #FBB534;
-
-}
-
-.titlebtn {
-    /* box-sizing: border-box; */
-    /* position: absolute;
-    left: 41.82%;
-    right: 50%;
-    top: 55.9%;
-    bottom: 39.11%; */
-    width: 140px;
-    height: 50;
-    position: relative;
-    left: -5%;
-    right: 50%;
-    top: 100px;
-    bottom: 39.11%;
-
-    background-color: #0C0C0C;
-    border: 1px solid #0D0806;
-    border-radius: 0px;
-    margin-top: 20px;
-
 }
 
 .btnlets {
@@ -218,11 +237,13 @@ html {
 }
 
 .C_img svg{
+    width: 100%;
     height: 400px;
 }
 
 .C_form {
     margin-top: 5%;
+    margin-left: 3%;
     display: flex;
     width: 50%;
     background: #FDFDFF;
@@ -236,7 +257,7 @@ html {
     justify-content: center;
     margin-top: 10%;
     justify-content: space-between;
-    margin-left: 5%;
+    margin-left: 0;
     margin-right: 5%;
 }
 
@@ -311,10 +332,56 @@ html {
     color: #FBBC3E;
 }
 
+@media (max-width: 360px) {}
+
+@media (min-width:900px) {
+    
+    .titleprod {
+        width: 100%;
+        position: absolute;
+        left: 2%;
+        right: 37.08%;
+        top: 20%;
+        /* bottom: 66.42%; */
+    }
+    .titledesc {
+        position: absolute;
+        left: 42.92%;
+        right: 22.57%;
+        top: 30%;
+        /* bottom: 48.89%; */
+    }
+    
+    .titleprice {
+        position: absolute;
+        left: 41.82%;
+        right: 50%;
+        top: 63%;
+        /* bottom: 40%; */
+    }
+    .titlebtn {
+        position: absolute;
+        left: -1%;
+        /* right: 0%; */
+        top: 70%;
+    }
+
+}
+
 @media (max-width: 952px) {
     * {
         padding-left: 0px;
         font-size: 16px;
+    }
+    .titledesc {
+        margin:2% 10%;
+    }
+    .carousel-item active{
+        flex-direction: column;
+        /* bottom: 66.42%; */
+    }
+    h1{
+        height: 100%;
     }
 
     .img-galery {
@@ -325,10 +392,16 @@ html {
         height: 1500px;
         background: rgba(251, 188, 62, 0.5);
     }
-    .img-galery img{
-        
-        
+    .carousel-item img{
+        width: 300px;
+        height: 300px;
+        margin: 8% 20%;
+        opacity: 0.7;
     }
+    .titlebtn {
+        margin: 5%  38%;
+    }
+    
     .C_img svg{
         height: 500px;
         align-items: center;
@@ -353,7 +426,4 @@ html {
     .C_form input{
         width: 90%;
     }
-
-
-    .
 }
