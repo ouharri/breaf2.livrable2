@@ -11,6 +11,9 @@ html {
     height: 400px;
     background: rgba(251, 188, 62, 0.5);
 }
+.intro{
+    display: flex;
+}
 
 .title {
     margin-top: 60px;
@@ -47,10 +50,10 @@ html {
 }
 
 .backr {
-    margin-top: -8%;
-    padding-left: 1, 57893573%;
+    position:absolute;
+    z-index: -10000;
     width: 100%;
-    height: 14%;
+    height: 100%;
     opacity: 0.1;
 }
 
@@ -184,11 +187,12 @@ html {
 }
 
 .galtitle {
-    position: absolute;
+    /* position: absolute; */
     /* width: 43.3813%; */
     /* height: 5.1473%; */
-    left: 60.95%;
-    top: 40%;
+    /* left: 60.95%;
+    top: 40%; */
+    z-index: 1000;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -197,16 +201,19 @@ html {
 }
 
 .btnlets {
-    position: absolute;
-    z-index: 100;
+        /* position: absolute;
+        z-index: 100;
+        width: 140px;
+        height: 50;
+        position: relative;
+        left: 62%;
+        right: 40%;
+        top: 300px;
+        bottom: 39.11%; */
+
+    z-index: 9999;
     width: 140px;
     height: 50;
-    position: relative;
-    left: 62%;
-    right: 40%;
-    top: 300px;
-    bottom: 39.11%;
-
     background-color: #FBC44B;
     border: none;
     border-radius: 0px;
@@ -225,13 +232,16 @@ html {
     margin-top: -10px;
 }
 
+/* .img-galery{
+    padding: 10%;
+} */
 
 .img-galery img {
     
-    width: 300px;
+    width: 400px;
     height: 350px;
-    margin: 2% 0%;
-    margin-left: 10px;
+    margin: 10px 0;
+    margin-left: 15px;
     /* background: url(pexels-rfstudio-3819712.jpg); */
     opacity: 0.7;
 }
@@ -297,6 +307,27 @@ html {
     margin-bottom: 20%;
 }
 
+.content{
+    /* background-image: url(/images/hero-bg.png) ; */
+    display: flex;
+    /* justify-content:space-evenly; */
+    gap: 200px;
+    align-items: center;
+    height: 95vh;
+    /* margin-top: 10px; */
+
+
+}
+.content .item-child img {
+    width: 400px;
+    height: 350px;
+    margin: 0 150px;
+    opacity: 0.8;
+}
+.content .item-childTow{
+    /* width: 50%; */
+}
+
 .btne {
     padding: 6px 26px;
     border:none;
@@ -335,7 +366,7 @@ html {
 @media (max-width: 360px) {}
 
 @media (min-width:900px) {
-    
+   
     .titleprod {
         width: 100%;
         position: absolute;
@@ -357,6 +388,7 @@ html {
         left: 41.82%;
         right: 50%;
         top: 63%;
+        
         /* bottom: 40%; */
     }
     .titlebtn {
@@ -365,6 +397,7 @@ html {
         /* right: 0%; */
         top: 70%;
     }
+    
 
 }
 
@@ -372,6 +405,14 @@ html {
     * {
         padding-left: 0px;
         font-size: 16px;
+    }
+
+    .content{
+        flex-direction: column;
+    } 
+
+    .d-block {
+        margin-left: 10%;
     }
     .titledesc {
         margin:2% 10%;
@@ -383,14 +424,20 @@ html {
     h1{
         height: 100%;
     }
-
+    .galtitle{
+        margin-top: -70px;
+    }
     .img-galery {
         flex-direction: column;
+        margin: 0;
         margin-top: 5%;
         margin-bottom: -30px;
         width: 100%;
         height: 1500px;
         background: rgba(251, 188, 62, 0.5);
+    }
+    .img-galery img{
+        width: 400px;
     }
     .carousel-item img{
         width: 300px;
@@ -401,7 +448,9 @@ html {
     .titlebtn {
         margin: 5%  38%;
     }
-    
+    .content .item-child img {
+        margin-top: 50px;
+    }
     .C_img svg{
         height: 500px;
         align-items: center;
