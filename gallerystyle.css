@@ -17,10 +17,9 @@ html {
 
 .title {
     margin-top: 60px;
-    margin-bottom: 0px;
-    height: 100px;
+    margin-bottom: 60px;
+    height: 100%;
     text-align: center;
-    align-items: center;
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
@@ -218,6 +217,7 @@ html {
     border: none;
     border-radius: 0px;
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 
@@ -410,7 +410,9 @@ html {
     .content{
         flex-direction: column;
     } 
-
+    .title{
+        font-size: 30px;
+    }
     .d-block {
         margin-left: 10%;
     }
